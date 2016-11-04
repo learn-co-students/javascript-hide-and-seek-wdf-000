@@ -14,10 +14,10 @@ function increaseRankBy(n){
   const rankedList = document.querySelectorAll('.ranked-list');
 
   for (let i = 0, l = rankedList.length; i < l; i++) {
-      let children = rankedList[i].children
+      var children = rankedList[i].children
 
   for (let i = 0, l = children.length; i < l; i++) {
-  children[i].innerHTML = parseInt(children[i].innerHTML)+n
+    children[i].innerHTML = parseInt(children[i].innerHTML)+n
   }
   }
 }
