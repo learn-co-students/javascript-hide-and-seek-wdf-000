@@ -14,7 +14,6 @@ describe('index', () => {
 
   describe('deepestChild()', () => {
     it('returns the most deeply nested child in #grand-node', () => {
-      console.log(deepestChild().innerHTML)
       expect(deepestChild()).toBe(document.querySelector('#grand-node div div div div'))
     })
   })
@@ -22,7 +21,7 @@ describe('index', () => {
   describe('increaseRankBy(n)', () => {
     it('increases ranks in .ranked-list by n', () => {
       increaseRankBy(3)
-
+      console.log('hereeee')
       const rankedLists = document.querySelectorAll('.ranked-list')
       const firstList = rankedLists[0]
       const secondList = rankedLists[1]
